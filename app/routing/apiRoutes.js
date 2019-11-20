@@ -9,21 +9,19 @@ module.exports = function (app) {
     app.post("/api/survey", function (req, res) {
         if (friendsData) {
             friendsData.push(req.body);
+            res.json(true);
         }
-    })
+    });
 };
 
-function scores() {
-    for (let i = 0; i < friendsData.scores.length; i ++) {
-        let data = friendsData.scores[i];
-        data += data;
+function scores(currentFriendValue) {
+    const allFriendValues = []
+    for (let i = 0; i < friendsData.length; i++) {
+        allFriendValues.push(friendsData[i].scores.reduce(function (a, b) { return a + b }) / 10)
     }
-    let finalScore = data / 10;
-    console.log(finalScore);
+    for (let i = 0; i < allFriendValues.length; i++) {
+       
+    }
+    
 }
 
-function compatible(val, func) {
-    for (let i = 0; i < friendsData.length; i++) {
-        if (friendsData[i].scores)
-    }
-}

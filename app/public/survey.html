@@ -13,173 +13,234 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-    <form>
-        <div class="form-group">
-            <label for="ControlInput1">Name</label>
-            <input type="name" class="form-control" id="ControlInput1" placeholder="Qui-Gonn Jin">
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <header>
+                    <h2>Friend Finder Survey <span class="fa fa-fire"></span></h2>
+                </header>
+            </div>
         </div>
-        <div class="form-group">
-            <p>Answer each question with 1 being least likely and 10 being most likely!</p>
-            <label for="exampleFormControlSelect1">Example select</label>
-            <select class="form-control" id="ControlSelect1">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-            </select>
+        <div class="row">
+            <div class="col-8">
+                <form>
+                    <div class="form-group">
+                        <label for="ControlInput1">Name</label>
+                        <input type="name" class="form-control" id="ControlInput1" placeholder="Qui-Gonn Jin">
+                    </div>
+                    <div class="form-group">
+                        <label for="ControlInput1">Image</label>
+                        <input type="name" class="form-control" id="ControlInput2" placeholder=".jpg">
+                    </div>
+                    <div class="form-group">
+                        <p class="text-center">Answer each question with 1 being least likely and 10 being most likely!
+                        </p>
+                        <label for="exampleFormControlSelect1">How likely are you to eat plants?</label>
+                        <select class="form-control" id="ControlSelect1">
+                            <option class="option1" value=1>1</option>
+                            <option class="option2" value=2>2</option>
+                            <option class="option3" value=3>3</option>
+                            <option class="option4" value=4>4</option>
+                            <option class="option5" value=5>5</option>
+                            <option class="option6" value=6>6</option>
+                            <option class="option7" value=7>7</option>
+                            <option class="option8" value=8>8</option>
+                            <option class="option9" value=9>9</option>
+                            <option class="option10" value=10>10</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ControlSelect2">How likely are you to disrespect Star Wars?</label>
+                        <select class="form-control" id="ControlSelect2">
+                            <option class="option1" value=1>1</option>
+                            <option class="option2" value=2>2</option>
+                            <option class="option3" value=3>3</option>
+                            <option class="option4" value=4>4</option>
+                            <option class="option5" value=5>5</option>
+                            <option class="option6" value=6>6</option>
+                            <option class="option7" value=7>7</option>
+                            <option class="option8" value=8>8</option>
+                            <option class="option9" value=9>9</option>
+                            <option class="option10" value=10>10</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ControlSelect3">How likely are you to be mad if woken up by urination?(Not your
+                            urination)</label>
+                        <select class="form-control" id="ControlSelect3">
+                            <option class="option1" value=1>1</option>
+                            <option class="option2" value=2>2</option>
+                            <option class="option3" value=3>3</option>
+                            <option class="option4" value=4>4</option>
+                            <option class="option5" value=5>5</option>
+                            <option class="option6" value=6>6</option>
+                            <option class="option7" value=7>7</option>
+                            <option class="option8" value=8>8</option>
+                            <option class="option9" value=9>9</option>
+                            <option class="option10" value=10>10</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ControlSelect4">How likely are you to make others do what you want to do?</label>
+                        <select class="form-control" id="ControlSelect4">
+                            <option class="option1" value=1>1</option>
+                            <option class="option2" value=2>2</option>
+                            <option class="option3" value=3>3</option>
+                            <option class="option4" value=4>4</option>
+                            <option class="option5" value=5>5</option>
+                            <option class="option6" value=6>6</option>
+                            <option class="option7" value=7>7</option>
+                            <option class="option8" value=8>8</option>
+                            <option class="option9" value=9>9</option>
+                            <option class="option10" value=10>10</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ControlSelect5">How likely are you to murder someone?</label>
+                        <select class="form-control" id="ControlSelect5">
+                            <option class="option1" value=1>1</option>
+                            <option class="option2" value=2>2</option>
+                            <option class="option3" value=3>3</option>
+                            <option class="option4" value=4>4</option>
+                            <option class="option5" value=5>5</option>
+                            <option class="option6" value=6>6</option>
+                            <option class="option7" value=7>7</option>
+                            <option class="option8" value=8>8</option>
+                            <option class="option9" value=9>9</option>
+                            <option class="option10" value=10>10</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ControlSelect6">How likely are you to assist in murdering someone?</label>
+                        <select class="form-control" id="ControlSelect6">
+                            <option class="option1" value=1>1</option>
+                            <option class="option2" value=2>2</option>
+                            <option class="option3" value=3>3</option>
+                            <option class="option4" value=4>4</option>
+                            <option class="option5" value=5>5</option>
+                            <option class="option6" value=6>6</option>
+                            <option class="option7" value=7>7</option>
+                            <option class="option8" value=8>8</option>
+                            <option class="option9" value=9>9</option>
+                            <option class="option10" value=10>10</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ControlSelect7">How likely are you to bring food to a friend and never get paid for
+                            the food?</label>
+                        <select class="form-control" id="ControlSelect7">
+                            <option class="option1" value=1>1</option>
+                            <option class="option2" value=2>2</option>
+                            <option class="option3" value=3>3</option>
+                            <option class="option4" value=4>4</option>
+                            <option class="option5" value=5>5</option>
+                            <option class="option6" value=6>6</option>
+                            <option class="option7" value=7>7</option>
+                            <option class="option8" value=8>8</option>
+                            <option class="option9" value=9>9</option>
+                            <option class="option10" value=10>10</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ControlSelect8">How likely are you to ask to borrow fuel for your car?</label>
+                        <select class="form-control" id="ControlSelect8">
+                            <option class="option1" value=1>1</option>
+                            <option class="option2" value=2>2</option>
+                            <option class="option3" value=3>3</option>
+                            <option class="option4" value=4>4</option>
+                            <option class="option5" value=5>5</option>
+                            <option class="option6" value=6>6</option>
+                            <option class="option7" value=7>7</option>
+                            <option class="option8" value=8>8</option>
+                            <option class="option9" value=9>9</option>
+                            <option class="option10" value=10>10</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ControlSelect9">How likely are you to speak out of line?</label>
+                        <select class="form-control" id="ControlSelect9">
+                            <option class="option1" value=1>1</option>
+                            <option class="option2" value=2>2</option>
+                            <option class="option3" value=3>3</option>
+                            <option class="option4" value=4>4</option>
+                            <option class="option5" value=5>5</option>
+                            <option class="option6" value=6>6</option>
+                            <option class="option7" value=7>7</option>
+                            <option class="option8" value=8>8</option>
+                            <option class="option9" value=9>9</option>
+                            <option class="option10" value=10>10</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ControlSelect10">How likely are you to have finished this stupid survey to find
+                            another loser?</label>
+                        <select class="form-control" id="ControlSelect10">
+                            <option class="option1" value=1>1</option>
+                            <option class="option2" value=2>2</option>
+                            <option class="option3" value=3>3</option>
+                            <option class="option4" value=4>4</option>
+                            <option class="option5" value=5>5</option>
+                            <option class="option6" value=6>6</option>
+                            <option class="option7" value=7>7</option>
+                            <option class="option8" value=8>8</option>
+                            <option class="option9" value=9>9</option>
+                            <option class="option10" value=10>10</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="ControlSelect2">Example select</label>
-            <select class="form-control" id="ControlSelect2">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="ControlSelect3">Example select</label>
-            <select class="form-control" id="ControlSelect3">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="ControlSelect4">Example select</label>
-            <select class="form-control" id="ControlSelect4">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="ControlSelect5">Example select</label>
-            <select class="form-control" id="ControlSelect5">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="ControlSelect6">Example select</label>
-            <select class="form-control" id="ControlSelect6">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="ControlSelect7">Example select</label>
-            <select class="form-control" id="ControlSelect7">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="ControlSelect8">Example select</label>
-            <select class="form-control" id="ControlSelect8">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="ControlSelect9">Example select</label>
-            <select class="form-control" id="ControlSelect9">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="ControlSelect10">Example select</label>
-            <select class="form-control" id="ControlSelect10">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-            </select>
-        </div>
-    </form>
+    </div>
     <div class="row mt-5">
         <div class="col text-center">
             <h3><button type="button" id="finish-button">Submit</button></h3>
         </div>
     </div>
+    <footer class="footer">
+        <p><a href="/api/survey">API Survey Link</a></p>
+        </div>
+    </footer>
 </body>
 
 </html>
+
+<script type="text/javascript">
+
+    $("#finish-button").on("click", function (event) {
+        event.preventDefault();
+
+        var newFriend = {
+            Name: $("#ControlInput1").val().trim(),
+            Image: $("#ControlInput2").val().trim(),
+            Question1: $("#ControlSelect1").val(),
+            Question2: $("#ControlSelect2").val(),
+            Question3: $("#ControlSelect3").val(),
+            Question4: $("#ControlSelect4").val(),
+            Question5: $("#ControlSelect5").val(),
+            Question6: $("#ControlSelect6").val(),
+            Question7: $("#ControlSelect7").val(),
+            Question8: $("#ControlSelect8").val(),
+            Question9: $("#ControlSelect9").val(),
+            Question10: $("#ControlSelect10").val()
+        };
+
+        console.log(newFriend);
+
+        $.post("/api/survey", newFriend,
+            function (data) {
+
+                if (data) {
+                    alert("Finding your Loser!");
+                }
+
+            });
+
+    });
+
+</script>
