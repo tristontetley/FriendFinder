@@ -1,6 +1,6 @@
 var friendStats = [{
     "name": "Luke Skywalker",
-    "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo": "https://media.contentapi.ea.com/content/dam/ea/walrus/characters/luke/hero/luke-skywalker-hero-xlg.jpg.adapt.crop191x100.1200w.jpg",
     "scores": [
         5,
         1,
@@ -16,7 +16,7 @@ var friendStats = [{
 },
 {
     "name": "Obi-Wan Kenobi",
-    "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo": "https://img1.looper.com/img/gallery/obi-wan-kenobi-disney-release-date-cast-and-plot/intro-1566770638.jpg",
     "scores": [
         5,
         1,
@@ -32,7 +32,7 @@ var friendStats = [{
 },
 {
     "name": "Qui-Gonn Jinn",
-    "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo": "https://vignette.wikia.nocookie.net/star-wars-canon-extended/images/4/40/Qui2.jpg/revision/latest?cb=20170919015731",
     "scores": [
         1,
         1,

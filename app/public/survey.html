@@ -16,6 +16,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .container {
+            margin-right: 25px;
+        }
+    </style>
+    <link rel="stylesheet" href="../css/survey.css">
 </head>
 
 <body>
@@ -202,6 +208,29 @@
             <h3><button type="button" id="finish-button">Submit</button></h3>
         </div>
     </div>
+
+    <!-- <button id="new-friend-data" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Click to see New Friend</button> -->
+
+
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">New Friends Information</h4>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
     <footer class="footer">
         <p><a href="/api/survey">API Survey Link</a></p>
         </div>
@@ -232,13 +261,15 @@
             ]
         };
 
-        console.log(newFriend);
-
         $.post("/api/survey", newFriend,
             function (data) {
-                
+
                 if (data) {
-                    alert("Finding your Loser!");
+                    console.log(data);
+                    $('.modal-body').html(`<h1>Name: ${data.name}</h1>
+                    <img id='user-photo' src='${data.photo}'>
+                    <h3>Scores: ${data.scores}</h3>`);
+                    $('#myModal').modal('show')
                 }
 
             });
