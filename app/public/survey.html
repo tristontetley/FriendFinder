@@ -216,25 +216,27 @@
         event.preventDefault();
 
         var newFriend = {
-            Name: $("#ControlInput1").val().trim(),
-            Image: $("#ControlInput2").val().trim(),
-            Scores: [$("#ControlSelect1").val(),
-            $("#ControlSelect2").val(),
-            $("#ControlSelect3").val(),
-            $("#ControlSelect4").val(),
-            $("#ControlSelect5").val(),
-            $("#ControlSelect6").val(),
-            $("#ControlSelect7").val(),
-            $("#ControlSelect8").val(),
-            $("#ControlSelect9").val(),
-            $("#ControlSelect10").val()]
+            name: $("#ControlInput1").val().trim(),
+            photo: $("#ControlInput2").val().trim(),
+            scores: [
+                parseInt($("#ControlSelect1").val()),
+                parseInt($("#ControlSelect2").val()),
+                parseInt($("#ControlSelect3").val()),
+                parseInt($("#ControlSelect4").val()),
+                parseInt($("#ControlSelect5").val()),
+                parseInt($("#ControlSelect6").val()),
+                parseInt($("#ControlSelect7").val()),
+                parseInt($("#ControlSelect8").val()),
+                parseInt($("#ControlSelect9").val()),
+                parseInt($("#ControlSelect10").val())
+            ]
         };
 
         console.log(newFriend);
 
         $.post("/api/survey", newFriend,
             function (data) {
-
+                
                 if (data) {
                     alert("Finding your Loser!");
                 }
