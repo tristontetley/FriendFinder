@@ -12,6 +12,19 @@
     background-color: rgb(128, 122, 122)
 }
 
+#survey-img {
+    background: url(../public/images/better-star-wars-survey-background-img.jpg) top center / 1920px 1400px;
+    font: white;
+}
+
+#survey-row {
+    margin-right: 10px;
+}
+
+.survey-header {
+    margin-left: 350px;
+}
+
 body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
